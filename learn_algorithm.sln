@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn_algorithm", "learn_algorithm\learn_algorithm.csproj", "{3571C6CA-DB3B-4850-B4AF-714A0613B66A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3571C6CA-DB3B-4850-B4AF-714A0613B66A}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{3571C6CA-DB3B-4850-B4AF-714A0613B66A}.Debug|anycpu.Build.0 = Debug|anycpu
+		{3571C6CA-DB3B-4850-B4AF-714A0613B66A}.Release|anycpu.ActiveCfg = Release|anycpu
+		{3571C6CA-DB3B-4850-B4AF-714A0613B66A}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
