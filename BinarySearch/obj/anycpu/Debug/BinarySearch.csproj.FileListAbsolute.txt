@@ -1,0 +1,9 @@
+/Users/larryhuang/Projects/learn_algorithm/BinarySearch/bin/Debug/BinarySearch.exe
+/Users/larryhuang/Projects/learn_algorithm/BinarySearch/bin/Debug/BinarySearch.pdb
+/Users/larryhuang/Projects/learn_algorithm/BinarySearch/obj/anycpu/Debug/BinarySearch.exe
+/Users/larryhuang/Projects/learn_algorithm/BinarySearch/obj/anycpu/Debug/BinarySearch.pdb
+/Users/larryhuang/Projects/learn_algorithm/BinarySearch/obj/anycpu/Debug/BinarySearch.csprojAssemblyReference.cache
+/Users/larryhuang/Projects/learn_algorithm/BinarySearch/bin/Debug/CsvHelper.dll
+/Users/larryhuang/Projects/learn_algorithm/BinarySearch/bin/Debug/CsvHelper.xml
+/Users/larryhuang/Projects/learn_algorithm/BinarySearch/obj/anycpu/Debug/BinarySearch.csproj.CopyComplete
+/Users/larryhuang/Projects/learn_algorithm/BinarySearch/bin/Debug/mobile1810.csv
