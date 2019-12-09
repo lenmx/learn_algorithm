@@ -20,7 +20,7 @@ namespace BinarySearch
             st.Start();
 
             time = 0;
-            int min = nums[0], max = nums[nums.Length - 1];
+            int min = 0, max = nums.Length - 1;
             int mid = (min + max) / 2;
 
             while (nums[mid] != num)

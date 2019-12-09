@@ -7,7 +7,7 @@ namespace BinarySearch
     {
         public static void Main(string[] args)
         {
-            const int numCount = 1000000000;
+            const int numCount = 1000000;
             int time = 0;
             double totalMS = 0;
             MobileRes mobileRes = new MobileRes();
