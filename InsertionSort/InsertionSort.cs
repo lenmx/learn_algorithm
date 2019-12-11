@@ -3,38 +3,41 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace BubbleSort
+namespace InsertionSort
 {
-    public class BubbleSort
+    public class InsertionSort
     {
         int[] nums;
         int time = 0;
         double totalMS = 0;
 
-        public BubbleSort(int numCount, int min, int max)
+        public InsertionSort(int numCount, int min, int max)
         {
             nums = new int[numCount];
             for (int i = 0; i < numCount; i++)
                 nums[i] = new Random().Next(min, max);
         }
 
-        public void Bubble()
+        public void Insertion()
         {
             Stopwatch st = new Stopwatch();
             st.Start();
 
-            int temp = 0;
-            for (int i = 0; i < nums.Length - 1; i++)
-                for (int j = nums.Length - 1; j > i; j--)
+            for (int i = 1; i < nums.Length; i++)
+            {
+                int currentNum = nums[i];
+                for (int j = i-1; j >= 0; j--)
                 {
                     time++;
-                    if (nums[i] > nums[j])
+                    if ( nums[j] > currentNum)
                     {
-                        temp = nums[i];
-                        nums[i] = nums[j];
-                        nums[j] = temp;
+                        nums[j + 1] = nums[j];
+                        nums[j] = currentNum;
                     }
+                    else break;
                 }
+            }
+
 
 
             st.Stop();
@@ -42,6 +45,6 @@ namespace BubbleSort
         }
 
         public override string ToString()
-            => $@"sort type: {nameof(BubbleSort)}, sort times: {time}, time spends: {totalMS}ms.";
+            => $@"sort type: {nameof(InsertionSort)}, sort times: {time}, time spends: {totalMS}ms.";
     }
 }
