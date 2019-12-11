@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "InsertionS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{35463C30-AC78-4140-8B15-EEE8342C9649}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{013AA359-B7EB-49C0-9BF4-83156ED935D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -38,6 +40,10 @@ Global
 		{35463C30-AC78-4140-8B15-EEE8342C9649}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{35463C30-AC78-4140-8B15-EEE8342C9649}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{35463C30-AC78-4140-8B15-EEE8342C9649}.Release|anycpu.Build.0 = Release|Any CPU
+		{013AA359-B7EB-49C0-9BF4-83156ED935D1}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{013AA359-B7EB-49C0-9BF4-83156ED935D1}.Debug|anycpu.Build.0 = Debug|anycpu
+		{013AA359-B7EB-49C0-9BF4-83156ED935D1}.Release|anycpu.ActiveCfg = Release|anycpu
+		{013AA359-B7EB-49C0-9BF4-83156ED935D1}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
