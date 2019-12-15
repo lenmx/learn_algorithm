@@ -24,28 +24,42 @@ namespace SelectionSort
             st.Start();
 
 
-            int index = 0;
-            for (int i = 0; i < nums.Length - 1; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
-                index = i;
-                for (int j = i + 1; j < nums.Length; j++)
-                {
-                    time++;
-                    if (nums[index] > nums[j])
-                        index = j;
-                }
-
-                if (index != i)
-                {
-                    int temp = nums[i];
-                    nums[i] = nums[index];
-                    nums[index] = temp;
+                int index = FindSmallIndex(nums, i);
+                if (index != i) {
+                    Swap(nums, index, i);
                 }
             }
 
 
             st.Stop();
             totalMS = st.Elapsed.TotalMilliseconds;
+        }
+
+        int FindSmallIndex(int[] arr, int startIndex)
+        {
+            int index = startIndex;
+            int num = arr[startIndex];
+            for (int i = startIndex; i < nums.Length; i++)
+            {
+                time++;
+
+                if (num > arr[i])
+                {
+                    num = arr[i];
+                    index = i;
+                }
+            }
+
+            return index;
+        }
+
+        void Swap(int[] arr, int i, int j)
+        {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
         }
 
         public override string ToString()
