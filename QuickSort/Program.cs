@@ -2,9 +2,9 @@
 
 namespace QuickSort
 {
-    class MainClass
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             const int numCount = 100000;
             const int min = 0, max = 100000;
@@ -17,6 +17,8 @@ namespace QuickSort
             //var bubbleSorter = new BubbleSort.BubbleSort(numCount, min, max);
             //bubbleSorter.Bubble();
             //Console.WriteLine(bubbleSorter.ToString());
+
+            Console.ReadLine();
         }
     }
 }

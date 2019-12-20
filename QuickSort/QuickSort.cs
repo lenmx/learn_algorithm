@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text;
 
 namespace QuickSort
 {
     public class QuickSort
     {
-        int[] nums;
+        public int[] nums;
         int time = 0;
         double totalMS = 0;
 
@@ -26,33 +28,35 @@ namespace QuickSort
             st.Stop();
             totalMS = st.Elapsed.TotalMilliseconds;
         }
-
-
-        void Sort(int l, int r)
+        public void Sort(int l, int r)
         {
-            if (l < r) {
-                int partitionIndex = Partition(l, r);
-                Sort(l, partitionIndex-1);
-                Sort(partitionIndex+1, r);
+            if (l < r)
+            {
+                time++;
+
+                int pIndex = Partition(l, r);
+                Sort(l, pIndex - 1);
+                Sort(pIndex + 1, r);
             }
         }
-
-        int Partition(int l, int r)
+        public int Partition(int l, int r)
         {
             int p = l;
             int index = p + 1;
 
-            for (int i = index; i <= r; i++)
+            for (int i = index; i < r; i++)
             {
-                if (nums[p] > nums[i]) {
-                    Swap(i, index);
+                time++;
+
+                if (nums[p] > nums[i])
+                {
+                    Swap(index, i);
                     index++;
                 }
             }
 
-
-            Swap(p, index - 1);
-            return index - 1;
+            Swap(p, --index);
+            return index;
         }
 
         void Swap(int i, int j)
