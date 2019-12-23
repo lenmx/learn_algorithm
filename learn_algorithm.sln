@@ -16,6 +16,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearch", "BinarySearc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{FCB18DE1-154B-4A60-A247-C6C22F467C13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFS", "BFS\BFS.csproj", "{F0296023-1301-44C3-8214-921FA162F820}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -50,6 +52,10 @@ Global
 		{FCB18DE1-154B-4A60-A247-C6C22F467C13}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{FCB18DE1-154B-4A60-A247-C6C22F467C13}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{FCB18DE1-154B-4A60-A247-C6C22F467C13}.Release|anycpu.Build.0 = Release|Any CPU
+		{F0296023-1301-44C3-8214-921FA162F820}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{F0296023-1301-44C3-8214-921FA162F820}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{F0296023-1301-44C3-8214-921FA162F820}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{F0296023-1301-44C3-8214-921FA162F820}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
