@@ -14,9 +14,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeSort", "MergeSort\Merg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{D7E7A58B-B311-493B-8880-0A6EC16990AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{FCB18DE1-154B-4A60-A247-C6C22F467C13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSort", "QuickSort\QuickSort.csproj", "{FCB18DE1-154B-4A60-A247-C6C22F467C13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFS", "BFS\BFS.csproj", "{F0296023-1301-44C3-8214-921FA162F820}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BFS", "BFS\BFS.csproj", "{F0296023-1301-44C3-8214-921FA162F820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFS", "DFS\DFS.csproj", "{767932B6-1319-44B8-B5BF-895F9D3ADDFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{F0296023-1301-44C3-8214-921FA162F820}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{F0296023-1301-44C3-8214-921FA162F820}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{F0296023-1301-44C3-8214-921FA162F820}.Release|anycpu.Build.0 = Release|Any CPU
+		{767932B6-1319-44B8-B5BF-895F9D3ADDFF}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{767932B6-1319-44B8-B5BF-895F9D3ADDFF}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{767932B6-1319-44B8-B5BF-895F9D3ADDFF}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{767932B6-1319-44B8-B5BF-895F9D3ADDFF}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
