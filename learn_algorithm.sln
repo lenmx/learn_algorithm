@@ -18,7 +18,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSort", "QuickSort\Quic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BFS", "BFS\BFS.csproj", "{F0296023-1301-44C3-8214-921FA162F820}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFS", "DFS\DFS.csproj", "{767932B6-1319-44B8-B5BF-895F9D3ADDFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DFS", "DFS\DFS.csproj", "{767932B6-1319-44B8-B5BF-895F9D3ADDFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijkstraSearch", "DijkstraSearch\DijkstraSearch.csproj", "{1DC6F9C0-FFAB-4ABD-8145-9EFDF6687878}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{767932B6-1319-44B8-B5BF-895F9D3ADDFF}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{767932B6-1319-44B8-B5BF-895F9D3ADDFF}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{767932B6-1319-44B8-B5BF-895F9D3ADDFF}.Release|anycpu.Build.0 = Release|Any CPU
+		{1DC6F9C0-FFAB-4ABD-8145-9EFDF6687878}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{1DC6F9C0-FFAB-4ABD-8145-9EFDF6687878}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{1DC6F9C0-FFAB-4ABD-8145-9EFDF6687878}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{1DC6F9C0-FFAB-4ABD-8145-9EFDF6687878}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
