@@ -6,7 +6,11 @@ namespace DijkstraSearch
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var djSearch = new DJSearch();
+            djSearch.Search();
+            Console.WriteLine(djSearch.ToString());
+
+            Console.ReadLine();
         }
     }
 }
