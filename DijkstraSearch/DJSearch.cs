@@ -14,18 +14,37 @@ namespace DijkstraSearch
 
         public DJSearch()
         {
-            graph.Add("start", new Dictionary<string, float> { { "a", 6 }, { "b", 2 } });
-            graph.Add("a", new Dictionary<string, float> { { "end", 1 } });
-            graph.Add("b", new Dictionary<string, float> { { "a", 3 }, { "end", 5 } });
-            graph.Add("end", new Dictionary<string, float> { });
+            //graph.Add("start", new Dictionary<string, float> { { "a", 6 }, { "b", 2 } });
+            //graph.Add("a", new Dictionary<string, float> { { "end", 1 } });
+            //graph.Add("b", new Dictionary<string, float> { { "a", 3 }, { "end", 5 } });
+            //graph.Add("end", new Dictionary<string, float> { });
 
-            costs.Add("a", 6);
-            costs.Add("b", 2);
-            costs.Add("end", float.PositiveInfinity);
+            //costs.Add("a", 6);
+            //costs.Add("b", 2);
+            //costs.Add("end", float.PositiveInfinity);
 
-            parents.Add("a", "start");
-            parents.Add("b", "start");
-            parents.Add("end", null);
+            //parents.Add("a", "start");
+            //parents.Add("b", "start");
+            //parents.Add("end", null);
+
+            //graph.Add("start", new Dictionary<string, float> { { "a", 5 }, { "b", 2 } });
+            //graph.Add("a", new Dictionary<string, float> { { "c", 4 }, { "d", 2 } });
+            //graph.Add("b", new Dictionary<string, float> { { "a", 8 }, { "d", 7 } });
+            //graph.Add("c", new Dictionary<string, float> { { "d", 6 }, { "end", 3 } });
+            //graph.Add("d", new Dictionary<string, float> { { "end", 1 } });
+            //graph.Add("end", new Dictionary<string, float> { });
+
+            //costs.Add("a", 5);
+            //costs.Add("b", 2);
+            //costs.Add("c", float.PositiveInfinity);
+            //costs.Add("d", float.PositiveInfinity);
+            //costs.Add("end", float.PositiveInfinity);
+
+            //parents.Add("a", "start");
+            //parents.Add("b", "start");
+            //parents.Add("c", null);
+            //parents.Add("d", null);
+            //parents.Add("end", null);
         }
 
         public void Search()
@@ -35,11 +54,10 @@ namespace DijkstraSearch
             {
                 var cost = costs[name]; 
                 var nodes = graph[name]; // 找到他的邻居
-                float newCost = 0;
 
                 foreach (var node in nodes) // 遍历邻居
                 {
-                    newCost = cost + node.Value;    
+                    float newCost = cost + node.Value;    
                     if (costs[node.Key] > newCost)
                     {
                         costs[node.Key] = newCost; // 更新邻居的开销
@@ -55,14 +73,12 @@ namespace DijkstraSearch
         public override string ToString()
         {
             var paths = GetPath();
-            return $@"paths: {string.Join("->", paths)}";
+            return $@"paths: {string.Join("->", paths)}, costs: {costs["end"]}";
         }
 
         string[] GetPath(string key = "end")
         {
-            int i = 0;
             List<string> paths = new List<string>();
-
             while (!string.IsNullOrEmpty(key))
             {
                 paths.Add(key);
