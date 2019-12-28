@@ -27,24 +27,24 @@ namespace DijkstraSearch
             //parents.Add("b", "start");
             //parents.Add("end", null);
 
-            //graph.Add("start", new Dictionary<string, float> { { "a", 5 }, { "b", 2 } });
-            //graph.Add("a", new Dictionary<string, float> { { "c", 4 }, { "d", 2 } });
-            //graph.Add("b", new Dictionary<string, float> { { "a", 8 }, { "d", 7 } });
-            //graph.Add("c", new Dictionary<string, float> { { "d", 6 }, { "end", 3 } });
-            //graph.Add("d", new Dictionary<string, float> { { "end", 1 } });
-            //graph.Add("end", new Dictionary<string, float> { });
+            graph.Add("start", new Dictionary<string, float> { { "a", 5 }, { "b", 2 } });
+            graph.Add("a", new Dictionary<string, float> { { "c", 4 }, { "d", 2 } });
+            graph.Add("b", new Dictionary<string, float> { { "a", 8 }, { "d", 7 } });
+            graph.Add("c", new Dictionary<string, float> { { "d", 6 }, { "end", 3 } });
+            graph.Add("d", new Dictionary<string, float> { { "end", 1 } });
+            graph.Add("end", new Dictionary<string, float> { });
 
-            //costs.Add("a", 5);
-            //costs.Add("b", 2);
-            //costs.Add("c", float.PositiveInfinity);
-            //costs.Add("d", float.PositiveInfinity);
-            //costs.Add("end", float.PositiveInfinity);
+            costs.Add("a", 5);
+            costs.Add("b", 2);
+            costs.Add("c", float.PositiveInfinity);
+            costs.Add("d", float.PositiveInfinity);
+            costs.Add("end", float.PositiveInfinity);
 
-            //parents.Add("a", "start");
-            //parents.Add("b", "start");
-            //parents.Add("c", null);
-            //parents.Add("d", null);
-            //parents.Add("end", null);
+            parents.Add("a", "start");
+            parents.Add("b", "start");
+            parents.Add("c", null);
+            parents.Add("d", null);
+            parents.Add("end", null);
         }
 
         public void Search()
