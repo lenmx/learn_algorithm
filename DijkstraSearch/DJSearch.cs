@@ -30,20 +30,20 @@ namespace DijkstraSearch
 
         public void Search()
         {
-            var name = FindLowCostNode(costs);
+            var name = FindLowCostNode(costs); // 找到最小开销的点
             while (!string.IsNullOrEmpty(name))
             {
-                var cost = costs[name];
-                var nodes = graph[name];
+                var cost = costs[name]; 
+                var nodes = graph[name]; // 找到他的邻居
                 float newCost = 0;
 
-                foreach (var node in nodes)
+                foreach (var node in nodes) // 遍历邻居
                 {
-                    newCost = cost + node.Value;
+                    newCost = cost + node.Value;    
                     if (costs[node.Key] > newCost)
                     {
-                        costs[node.Key] = newCost;
-                        parents[node.Key] = node.Key;
+                        costs[node.Key] = newCost; // 更新邻居的开销
+                        parents[node.Key] = name; // 更新节点的父节点
                     }
                 }
 
@@ -55,23 +55,21 @@ namespace DijkstraSearch
         public override string ToString()
         {
             var paths = GetPath();
-            
-
             return $@"paths: {string.Join("->", paths)}";
         }
 
         string[] GetPath(string key = "end")
         {
             int i = 0;
-            string[] paths = new string[parents.Count];
+            List<string> paths = new List<string>();
 
             while (!string.IsNullOrEmpty(key))
             {
-                paths[i++] = key;
-                key = parents[key];
+                paths.Add(key);
+                key = parents.ContainsKey(key)?parents[key]:"";
             }
 
-            return paths.Reverse().ToArray();
+            return paths.ToArray().Reverse().ToArray();
         }
 
         string FindLowCostNode(Dictionary<string, float> _costs)
